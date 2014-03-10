@@ -1,7 +1,7 @@
 {
   "name": "Pastel",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "A dark pastel theme for the Atom editor ",
   "repository": "https://github.com/esundahl/atom-pastel",

@@ -3,7 +3,7 @@
   "theme": "syntax",
   "version": "0.1.0",
   "private": true,
-  "description": "A short description of your theme",
+  "description": "A dark pastel theme for the Atom editor ",
   "repository": "https://github.com/esundahl/atom-pastel",
   "license": "MIT",
   "engines": {

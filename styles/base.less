@@ -1,21 +1,18 @@
 
 @import 'variables';
 
+atom-text-editor, :host {
 
-.editor-colors {
-  background-color: @black;
+  background-color: @darkgray;
   color: @purple;
-}
-
-.editor {
 
   .invisible-character,
   .indent-guide {
-    color: @darkgray;
+    color: @lightgray;
   }
 
   .gutter {
-    background: @black;
+    background: @darkgray;
     color: @gray;
   }
 
@@ -24,14 +21,15 @@
   }
 
   .selection .region {
-    background-color: rgba(153, 153, 153, 0.25);
+    background-color: lighten(@darkgray, 10%);
   }
 
-  .line-number.cursor-line-no-selection, .editor.is-focused .line.cursor-line {
-    background-color: rgba(0, 0, 0, 0.07);
+  .line-number.cursor-line, .atom-text-editor.is-focused .line.cursor-line {
+    background-color: lighten(@darkgray, 5%);
+    font-weight: bold;
   }
 
-  .bracket-matcher {
+  .bracket-matcher .region {
     background-color: #666;
     opacity: 0.7;
   }
@@ -88,19 +86,11 @@
 
 }
 
-
-
-
-
 .keyword:not(.keyword.operator), .keyword.operator.logical {
   color: @green;
 }
 
 .keyword { color: @green; }
-
-
-
-
 
 .support.type.exception {
   color: @red;

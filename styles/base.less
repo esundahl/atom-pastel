@@ -1,7 +1,7 @@
 
 @import 'variables';
 
-atom-text-editor, :host {
+atom-text-editor {
 
   background-color: @darkgray;
   color: @purple;
@@ -34,109 +34,109 @@ atom-text-editor, :host {
     opacity: 0.7;
   }
 
-  .comment {
+  .syntax--comment {
     color: @lightgray;
     font-style: italic;
   }
 
-  .invalid.deprecated {
+  .syntax--invalid.syntax--deprecated {
     text-decoration: underline;
     color: @red;
   }
 
-  .string {
+  .syntax--string {
     color: @orange;
 
-    .constant.character.escape {
+    .syntax--constant.syntax--character.syntax--escape {
       color: @red;
     }
 
-    &.regexp {
+    &.syntax--regexp {
       color: @orange;
 
-      .source.ruby.embedded,
-      .string.regexp.arbitrary-repitition {
+      .syntax--source.syntax--ruby.syntax--embedded,
+      .syntax--string.syntax--regexp.syntax--arbitrary-repitition {
         color: @red;
       }
     }
   }
 
-  .constant {
+  .syntax--constant {
     color: @orange;
   }
 
-  .variable,
-  .variable.parameter,
-  .variable.other {
+  .syntax--variable,
+  .syntax--variable.syntax--parameter,
+  .syntax--variable.syntax--other {
     color: @yellow;
   }
 
-  .entity {
+  .syntax--entity {
     color: @blue;
   }
 
-  .entity.other.inherited-class {
+  .syntax--entity.syntax--other.syntax--inherited-class {
     font-style: italic;
     color: @cyan;
   }
 
-  .storage {
+  .syntax--storage {
     color: @green;
   }
 
 }
 
-.keyword:not(.keyword.operator), .keyword.operator.logical {
+.syntax--keyword:not(.syntax--keyword.syntax--operator), .syntax--keyword.syntax--operator.syntax--logical {
   color: @green;
 }
 
-.keyword { color: @green; }
+.syntax--keyword { color: @green; }
 
-.support.type.exception {
+.syntax--support.syntax--type.syntax--exception {
   color: @red;
 }
 
-.entity.other.attribute-name {
+.syntax--entity.syntax--other.syntax--attribute-name {
   color: @orange;
 }
 
-.support.constant {
+.syntax--support.syntax--constant {
   color: @red;
 }
 
-.support.type, .support.class {
+.syntax--support.syntax--type, .syntax--support.syntax--class {
   color: @blue;
 }
 
-.support.other.variable {
+.syntax--support.syntax--other.syntax--variable {
   color: @red;
 }
 
-.invalid {
+.syntax--invalid {
   color: #DDE6CF;
   background-color: #5F0047;
 }
 
-.comment {
+.syntax--comment {
   color: @lightgray;
 }
 
-.meta.function.section {
+.syntax--meta.syntax--function.syntax--section {
   background-color: #371D28;
 }
 
-.markup.deleted {
+.syntax--markup.syntax--deleted {
   color: @red;
 }
 
-.markup.inserted {
+.syntax--markup.syntax--inserted {
   color: @green;
 }
 
-.markup.changed {
+.syntax--markup.syntax--changed {
   color: @blue;
 }
 
-.markdown-preview {
+.syntax--markdown-preview {
   overflow-x: auto
 }
